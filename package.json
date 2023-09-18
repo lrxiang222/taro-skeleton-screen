@@ -1,0 +1,19 @@
+{
+  "name": "taro-skeleton-screen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrxiang222/taro-skeleton-screen.git"
+  },
+  "author": "ljxiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lrxiang222/taro-skeleton-screen/issues"
+  },
+  "homepage": "https://github.com/lrxiang222/taro-skeleton-screen#readme"
+}
