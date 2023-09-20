@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+      - run: npm run build:rollup
 
   publish-npm:
     needs: build
