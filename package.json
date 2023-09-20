@@ -1,7 +1,7 @@
 {
   "name": "skeleton-screen",
-  "version": "1.0.0",
-  "private": true,
+  "version": "0.0.2",
+  "private": false,
   "description": "基于Taro的骨架屏插件",
   "templateInfo": {
     "name": "default",
