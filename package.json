@@ -12,7 +12,9 @@
         "css": "sass"
     },
     "files": [
-        "dist"
+        "dist",
+        "package.json",
+        "README.md"
     ],
     "type": "module",
     "keywords": [
