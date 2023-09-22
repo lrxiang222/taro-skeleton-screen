@@ -20,6 +20,11 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm run build:rollup
+      - uses: actions/upload-artifact@v2
+        with: 
+          name: dist-files
+          path: dist/
+      
 
   publish-npm:
     needs: build
