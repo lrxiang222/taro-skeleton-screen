@@ -22,9 +22,9 @@ jobs:
       - run: npm run build:rollup
       - uses: actions/upload-artifact@v2
         with: 
-          name: dist-files
-          path: dist/
-      
+          name: upload-dist-files
+          path: |
+            dist
 
   publish-npm:
     needs: build
@@ -36,7 +36,8 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
           folder: dist
-          
+
+      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
