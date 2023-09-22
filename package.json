@@ -1,6 +1,6 @@
 {
     "name": "taro-skeleton-screen",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "基于Taro的骨架屏插件",
     "browser": "dist/index.umd.js",
     "module": "dist/index.esm.js",
