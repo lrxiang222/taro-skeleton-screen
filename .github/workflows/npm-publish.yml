@@ -19,7 +19,6 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm run build:rollup
 
   publish-npm:
     needs: build
@@ -30,6 +29,11 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
+      - run: npm run build:rollup
+      - uses: actions/upload-artifact@v2
+        with: 
+          name: upload-dist
+          path: dist
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
