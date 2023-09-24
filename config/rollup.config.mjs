@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 16:00:26
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 13:49:36
+ * @LastEditTime: 2023-09-24 17:42:28
  * @Description: 
  */
 import RollupJson from '@rollup/plugin-json';
@@ -23,10 +23,10 @@ const externalPackages = [
     '@tarojs/taro',
     '@tarojs/react'
 ]
-const resolveFile = pathobj => { 
+const resolveFile = pathobj => {
     let newObj = resolve(__dirname, ".", pathobj)
     // console.log("pathobj", newObj, Package);
-    return newObj 
+    return newObj
 };
 
 export default {
@@ -57,7 +57,11 @@ export default {
     external: externalPackages,
     plugins: [
         RollupJson(),
-        RollupScss(),
+        RollupScss({
+            include: ["/**/*.css", "/**/*.scss", "/**/*.sass"],
+            output: 'style.css',
+            failOnError: true,
+        }),
         RollupNodeResolve(),
         RollupCommonjs({
             include: /\/node_modules\//
