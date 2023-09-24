@@ -1,6 +1,6 @@
 {
     "name": "taro-skeleton-screen",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "基于Taro的骨架屏插件",
     "browser": "dist/index.umd.js",
     "module": "dist/index.esm.js",
@@ -22,6 +22,7 @@
         "taro-skeleton",
         "skeleton"
     ],
+    "type": "module",
     "scripts": {
         "build:weapp": "taro build --type weapp",
         "build:swan": "taro build --type swan",
@@ -32,7 +33,7 @@
         "build:qq": "taro build --type qq",
         "build:jd": "taro build --type jd",
         "build:quickapp": "taro build --type quickapp",
-        "build:rollup": "rollup --config  ./config/rollup.config.js",
+        "build:rollup": "rollup --config  ./config/rollup.config.mjs",
         "dev:weapp": "npm run build:weapp -- --watch",
         "dev:swan": "npm run build:swan -- --watch",
         "dev:alipay": "npm run build:alipay -- --watch",

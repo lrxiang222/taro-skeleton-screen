@@ -2,7 +2,7 @@
     "extends": "./tsconfig.build",
     "compilerOptions": {
         "target": "es2017",
-        "module": "commonjs",
+        "module": "ESNext",
         "removeComments": false,
         "preserveConstEnums": true,
         "moduleResolution": "node",
@@ -17,7 +17,6 @@
         "baseUrl": ".",
         "rootDir": ".",
         "jsx": "react-jsx",
-        "jsxFactory": "React.createElement",
         "allowJs": true,
         "resolveJsonModule": true,
         "typeRoots": [
