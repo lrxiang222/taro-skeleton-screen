@@ -2,12 +2,12 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 17:16:15
+ * @LastEditTime: 2023-09-24 19:00:49
  * @Description: 
  */
 import Taro from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.scss'
+// import './index.scss'
 import { SkeletonProps } from "./index.types";
 
 const DEFAULT_ROW_WIDTH = '100%';
