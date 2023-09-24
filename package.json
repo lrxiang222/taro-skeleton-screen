@@ -17,7 +17,6 @@
         "package.json",
         "README.md"
     ],
-    "type": "module",
     "keywords": [
         "taro",
         "taro-skeleton",
@@ -33,7 +32,7 @@
         "build:qq": "taro build --type qq",
         "build:jd": "taro build --type jd",
         "build:quickapp": "taro build --type quickapp",
-        "build:rollup": "rollup --config  ./config/rollup.config.mjs",
+        "build:rollup": "rollup --config  ./config/rollup.config.js",
         "dev:weapp": "npm run build:weapp -- --watch",
         "dev:swan": "npm run build:swan -- --watch",
         "dev:alipay": "npm run build:alipay -- --watch",
