@@ -2,16 +2,16 @@
  * @Author: kime
  * @Date: 2023-09-20 16:00:26
  * @LastEditors: kime
- * @LastEditTime: 2023-09-20 17:56:11
+ * @LastEditTime: 2023-09-22 18:29:53
  * @Description: 
  */
-import { resolve, dirname } from 'path';
 import RollupJson from '@rollup/plugin-json';
 import RollupNodeResolve from "@rollup/plugin-node-resolve";
 import RollupCommonjs from "@rollup/plugin-commonjs";
 import RollupTypescript from '@rollup/plugin-typescript';
 import RollupCopy from "rollup-plugin-copy";
 import RollupScss from "rollup-plugin-scss";
+import { resolve, dirname } from 'path';
 import Package from '../package.json' assert { type: 'json' };
 
 const __dirname = dirname("node:path");
