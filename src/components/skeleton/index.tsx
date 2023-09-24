@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 19:00:49
+ * @LastEditTime: 2023-09-24 19:09:46
  * @Description: 
  */
 import Taro from '@tarojs/taro'
@@ -101,7 +101,6 @@ export default function Skeleton (props: SkeletonProps) {
     return (
         <View className={"skeleton " + rootClass}>
             {renderAvatar()}
-            <Text>Hello EveryOne</Text>
             <View className='skeleton-content' style={{ textAlign: props.contentAlignStyle }}>
                 {renderTitle()}
                 {renderRows()}
