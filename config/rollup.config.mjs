@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 16:00:26
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 17:42:28
+ * @LastEditTime: 2023-09-24 18:59:58
  * @Description: 
  */
 import RollupJson from '@rollup/plugin-json';
@@ -57,11 +57,7 @@ export default {
     external: externalPackages,
     plugins: [
         RollupJson(),
-        RollupScss({
-            include: ["/**/*.css", "/**/*.scss", "/**/*.sass"],
-            output: 'style.css',
-            failOnError: true,
-        }),
+        RollupScss(),
         RollupNodeResolve(),
         RollupCommonjs({
             include: /\/node_modules\//
