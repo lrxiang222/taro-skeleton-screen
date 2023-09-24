@@ -2,15 +2,15 @@
  * @Author: kime
  * @Date: 2023-09-20 16:00:26
  * @LastEditors: kime
- * @LastEditTime: 2023-09-22 18:29:53
+ * @LastEditTime: 2023-09-24 13:49:36
  * @Description: 
  */
 import RollupJson from '@rollup/plugin-json';
 import RollupNodeResolve from "@rollup/plugin-node-resolve";
 import RollupCommonjs from "@rollup/plugin-commonjs";
-import RollupTypescript from '@rollup/plugin-typescript';
 import RollupCopy from "rollup-plugin-copy";
 import RollupScss from "rollup-plugin-scss";
+import RollupTypescript from '@rollup/plugin-typescript';
 import { resolve, dirname } from 'path';
 import Package from '../package.json' assert { type: 'json' };
 
