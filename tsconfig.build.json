@@ -4,7 +4,7 @@
         "experimentalDecorators": true,
         "jsx": "react-jsx",
         "target": "es2017",
-        "module": "ESNext",
+        "module": "commonjs",
         "allowJs": true,
         "moduleResolution": "node",
         "noImplicitAny": false,
