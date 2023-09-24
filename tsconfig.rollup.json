@@ -2,7 +2,7 @@
     "extends": "./tsconfig.build",
     "compilerOptions": {
         "target": "es2017",
-        "module": "ESNext",
+        "module": "commonjs",
         "removeComments": false,
         "preserveConstEnums": true,
         "moduleResolution": "node",
