@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-18 15:44:33
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 18:52:17
+ * @LastEditTime: 2023-09-26 17:16:36
  * @Description: 
 -->
 # taro-skeleton-screen
@@ -22,6 +22,12 @@
 ``` javascript
 import Skeleton from 'taro-skeleton-screen'
 ```
+
+#### 导入样式
+``` javascript
+import 'taro-skeleton-screen/style/taroskeleton.css'
+```
+
 
 ### 基础用法
 
