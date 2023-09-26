@@ -1,8 +1,7 @@
 {
-    "extends": "./tsconfig.build",
     "compilerOptions": {
         "target": "es2017",
-        "module": "commonjs",
+        "module": "esnext",
         "removeComments": false,
         "preserveConstEnums": true,
         "moduleResolution": "node",
@@ -16,11 +15,11 @@
         "sourceMap": true,
         "baseUrl": ".",
         "rootDir": ".",
-        "jsx": "react-jsx",
+        "jsx": "react",
         "allowJs": true,
         "resolveJsonModule": true,
         "typeRoots": [
-            "node_modules/@types"
+            "node_modules/@types",
         ],
         "paths": {
             "@/*": [

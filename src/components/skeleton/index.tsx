@@ -2,13 +2,13 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-09-24 19:09:46
+ * @LastEditTime: 2023-09-26 16:47:51
  * @Description: 
  */
-import Taro from '@tarojs/taro'
+import React from 'react';
 import { View, Text } from '@tarojs/components'
-// import './index.scss'
 import { SkeletonProps } from "./index.types";
+import "./index.scss";
 
 const DEFAULT_ROW_WIDTH = '100%';
 const DEFAULT_DESIGN_WIDTH = 750

@@ -2,9 +2,9 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
-        "jsx": "react-jsx",
+        "jsx": "react",
         "target": "es2017",
-        "module": "commonjs",
+        "module": "esnext",
         "allowJs": true,
         "moduleResolution": "node",
         "noImplicitAny": false,

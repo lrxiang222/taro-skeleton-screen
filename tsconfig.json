@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es2017",
-        "module": "commonjs",
+        "module": "esnext",
         "removeComments": false,
         "preserveConstEnums": true,
         "moduleResolution": "node",
@@ -15,23 +15,25 @@
         "sourceMap": true,
         "baseUrl": ".",
         "rootDir": ".",
-        "jsx": "react-jsx",
-        "jsxFactory": "React.createElement",
+        "jsx": "react",
         "allowJs": true,
         "resolveJsonModule": true,
         "typeRoots": [
+            "src/types",
             "node_modules/@types"
         ],
         "paths": {
             "@/*": [
-                "src/*"
+                "src/*",
+                "src/types/*"
             ]
         }
     },
     "include": [
         "./src",
         "./types",
-        "./config"
+        "./config",
+        "./rollup.config.mjs"
     ],
     "compileOnSave": false
 }

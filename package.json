@@ -1,16 +1,11 @@
 {
     "name": "taro-skeleton-screen",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "description": "基于Taro的骨架屏插件",
     "browser": "dist/index.umd.js",
     "module": "dist/index.esm.js",
     "main": "dist/index.js",
     "source": "src/components/skeleton/index.tsx",
-    "templateInfo": {
-        "name": "default",
-        "typescript": true,
-        "css": "sass"
-    },
     "files": [
         "dist",
         "dist/**",
@@ -32,7 +27,7 @@
         "build:qq": "taro build --type qq",
         "build:jd": "taro build --type jd",
         "build:quickapp": "taro build --type quickapp",
-        "build:rollup": "rollup --config  ./config/rollup.config.mjs",
+        "build:rollup": "rollup --config  ./rollup.config.mjs",
         "dev:weapp": "npm run build:weapp -- --watch",
         "dev:swan": "npm run build:swan -- --watch",
         "dev:alipay": "npm run build:alipay -- --watch",
@@ -66,7 +61,8 @@
         "@tarojs/shared": "3.6.16",
         "@tarojs/taro": "3.6.16",
         "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react-dom": "^18.0.0",
+        "rollup-plugin-cleaner": "^1.0.0"
     },
     "devDependencies": {
         "@babel/core": "^7.8.0",
@@ -99,6 +95,7 @@
         "rollup-plugin-copy": "^3.5.0",
         "rollup-plugin-scss": "^4.0.0",
         "rollup-plugin-visualizer": "^5.9.2",
+        "sass": "^1.68.0",
         "stylelint": "^14.4.0",
         "ts-node": "^10.9.1",
         "tsconfig-paths-webpack-plugin": "^4.0.1",
