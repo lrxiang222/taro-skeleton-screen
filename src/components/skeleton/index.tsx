@@ -6,7 +6,7 @@
  * @Description: 
  */
 import React from 'react';
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import { SkeletonProps } from "./index.types";
 import "./index.scss";
 
@@ -87,7 +87,7 @@ export default function Skeleton (props: SkeletonProps) {
         return null
     }
 
-    let rootClass = props.type ? `"keleton-type-${props.type}` : "";
+    let rootClass = props.type ? `"skeleton-type-${props.type}` : "";
     if (props.animate && props.animateName === 'blink') {
         rootClass += " skeleton-animate-blink ";
     }
