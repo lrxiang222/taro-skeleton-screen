@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-09-26 16:47:51
+ * @LastEditTime: 2023-10-09 10:47:40
  * @Description: 
  */
 import React from 'react';
@@ -89,11 +89,11 @@ export default function Skeleton (props: SkeletonProps) {
 
     let rootClass = props.type ? `"keleton-type-${props.type}` : "";
     if (props.animate && props.animateName === 'blink') {
-        rootClass += "skeleton-animate-blink ";
+        rootClass += " skeleton-animate-blink ";
     }
 
     if (props.animate && props.animateName === 'elastic') {
-        rootClass += "skeleton-animate-elastic ";
+        rootClass += " skeleton-animate-elastic ";
     }
 
 
