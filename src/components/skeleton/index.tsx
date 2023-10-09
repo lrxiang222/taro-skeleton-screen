@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-10-09 10:47:40
+ * @LastEditTime: 2023-10-09 16:57:51
  * @Description: 
  */
 import React from 'react';
@@ -96,6 +96,9 @@ export default function Skeleton (props: SkeletonProps) {
         rootClass += " skeleton-animate-elastic ";
     }
 
+    if (props.className) {
+        rootClass += " " + props.className + " ";
+    }
 
 
     return (
