@@ -2,13 +2,14 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-10-09 16:57:51
+ * @LastEditTime: 2023-10-10 09:44:10
  * @Description: 
  */
 import React from 'react';
 import { View } from '@tarojs/components'
 import { SkeletonProps } from "./index.types";
 import "./index.scss";
+import Taro from '@tarojs/taro';
 
 const DEFAULT_ROW_WIDTH = '100%';
 const DEFAULT_DESIGN_WIDTH = 750
@@ -52,12 +53,12 @@ export default function Skeleton (props: SkeletonProps) {
     }
 
     const addUnit = (value?: string | number) => {
-        return typeof value === 'number' ? value + "px" : value
+        return typeof value === 'number' ? Taro.pxTransform(value) + "px" : value
     }
 
     const renderAvatar = (): JSX.Element | null => {
         if (props.avatar) {
-            const avatarClass = props.avatarShape === 'round' ? 'skeleton-avatar-round' : 'skeleton-avatar';
+            const avatarClass = props.avatarShape === 'round' ? 'skeleton-avatar skeleton-avatar-round' : 'skeleton-avatar';
             return <View className={avatarClass} style={` width: ${addUnit(props.avatarSize)};height: ${addUnit(props.avatarSize)} `} />
         }
         return null
@@ -99,7 +100,6 @@ export default function Skeleton (props: SkeletonProps) {
     if (props.className) {
         rootClass += " " + props.className + " ";
     }
-
 
     return (
         <View className={"skeleton " + rootClass}>
