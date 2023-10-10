@@ -2,7 +2,7 @@
  * @Author: kime
  * @Date: 2023-09-20 15:41:10
  * @LastEditors: kime
- * @LastEditTime: 2023-10-10 09:44:10
+ * @LastEditTime: 2023-10-10 09:59:37
  * @Description: 
  */
 import React from 'react';
@@ -21,7 +21,6 @@ export default function Skeleton (props: SkeletonProps) {
 
 
     const getRowWidth = (index: number) => {
-
         if (props.rowProps) {
             if (Array.isArray(props.rowProps)) {
                 return props.rowProps[index].width
@@ -53,7 +52,7 @@ export default function Skeleton (props: SkeletonProps) {
     }
 
     const addUnit = (value?: string | number) => {
-        return typeof value === 'number' ? Taro.pxTransform(value) + "px" : value
+        return typeof value === 'number' ? Taro.pxTransform(value) : value
     }
 
     const renderAvatar = (): JSX.Element | null => {
@@ -64,19 +63,20 @@ export default function Skeleton (props: SkeletonProps) {
         return null
     }
 
-
     const renderTitle = (): JSX.Element | null => {
         if (props.title) {
             return <View className='skeleton-title' style={`width: ${addUnit(props.titleWidth)};`}></View>
         }
         return null
     }
+
     const renderAction = (): JSX.Element | null => {
         if (props.action && props.type !== 'column') {
             return <View className='skeleton-action' />
         }
         return null
     }
+
     const renderRows = (): JSX.Element | null => {
         if (props.row) {
             const rowArray = Array.apply(null, Array(props.row)).map((_, index) => index)
